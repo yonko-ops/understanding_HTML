@@ -1,0 +1,71 @@
+* {
+   box-sizing: border-box;
+}
+
+body {
+   font-size: 16px;
+}
+
+nav {
+   position: sticky;
+   top: 0;
+   background-color: rgb(0, 0, 0);
+   text-align: center;
+}
+
+nav ul li {
+   display: inline;
+   margin: 0 0.2rem;
+   line-height: 1.5rem;
+}
+
+nav ul li a {
+   text-decoration: none;
+   color: white;
+}
+
+main {
+   max-width: clamp(700px, 50%, 900px); 
+   padding: 0 2rem;
+   border-left: solid 2px black;
+   border-right: solid 2px black;
+   margin: 0 auto;
+}
+
+
+#testimonials blockquote {
+   border: 1px solid black;
+   padding: 0 0.5rem;
+   margin: 0.5rem 0;
+}
+
+.resume-fieldset {
+   border: none;
+   margin: 0;
+   padding: 0;
+}
+
+.resume-fieldset legend {
+   padding: 0;
+}
+
+.label-standard {
+   display: block;
+   margin-bottom: 0.3rem;
+}
+
+.field {
+   margin-bottom: 1.25rem;
+}
+
+.my-picture {
+   float: left;
+   margin-right: 0.8rem; 
+   max-width: 75px;
+}
+
+#about-me {
+   background-color: black;
+   color: white;
+   display: flow-root;
+}

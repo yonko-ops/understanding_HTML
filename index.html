@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Resume of Henry Ogbogu</title>
+      <!-- rel means the relationship the link (external resource) has with the document is a stylesheet--> 
+      <link rel="stylesheet" href="styles.css">
+      <!-- <style>
+         ul {
+            font-weight: bold;
+         }
+      </style> -->
+   </head>
+   <body>
+      <nav id="nav">
+         <ul>
+            <li><a href="#aboutme">About Me</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#work-history">Work History</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#mailing-address">Mailing Address</a></li>
+         </ul>
+      </nav>
+      <main>
+         <h1>Resume</h1>
+         <section>
+            <h2>Henry Ogbogu</h2>
+            <p>
+               Coder, UX Designer, and Instructor
+            </p>
+            <dl>
+               <dt>Website:</dt>
+               <dd><a href="https://www.google.com" target="_blank">google.com</a></dd> 
+               <dt>Phone:</dt>
+               <dd>555-555-1111</dd>
+               <dt>Twitter:</dt>
+               <dd><a href="https://www.x.com">@henrypogbogue</a></dd>
+            </dl> 
+         </section>
+
+         <article id="about-me">
+            <header class="flex-header">
+               <h2>About Me</h2>
+            </header>
+            <img src="images/passport_sized_foto.jpg" alt="a picture of Henry" class="my-picture">
+            <p>Hi! I'm Henry Ogbogu and i'm <em>happy</em> to have you as a student in my courses.</p>
+            <aside class="motto"><p><small>Don't imitate, understand!</small></p></aside>
+            <footer>
+               Contact me
+            </footer>
+         </article>
+
+         <section id="services">
+            <h2>Services</h2>
+            <ul>
+               <li>Web Development</li>
+               <li>App Development</li>
+               <li>Training</li>
+            </ul>
+         </section>
+
+         <section id="skills">
+            <h2>Skills</h2>
+            <ul class="resume-list">
+               <li>
+                  HTML
+                  Markup your content with semantic HTML.
+               </li>
+               <li>
+                  CSS
+                  Layout your content visually for multiple devices.
+               </li>
+               <li>
+                  JavaScript
+                  Make your content more interactive, and build web applications.
+               </li>
+            </ul>
+         </section>
+
+         <section id="work-history">
+            <h2>Work History</h2>
+            <ol class="resume-list">
+               <li>
+                  UX/UI Designer
+                  XYZ Corp
+                  3 years
+               </li>
+
+               <li>
+                  Web Developer
+                  ABC Corp
+                  5 years
+               </li>
+
+               <li>
+                  Carpet Cleaner
+                  123 Inc.
+                  2 years
+               </li>
+            </ol>
+         </section>
+         
+         <!-- Needs pictures-->
+         <section id="portfolio">
+            <h2>Portfolio</h2>
+            <img src="https://picsum.photos/200/110" alt="Random images">
+            <img src="https://picsum.photos/200/150" alt="Random images">
+            <img src="https://picsum.photos/100/100" alt="Random images">
+            <img src="https://picsum.photos/125/210" alt="Random images">
+            <img src="https://picsum.photos/190/100" alt="Random images">
+            <img src="https://picsum.photos/150/210" alt="Random images">
+            <img src="https://picsum.photos/200/" alt="Random images">
+         </section>
+
+         <section id="testimonials">
+            <h2 class="flex-header">Testimonials</h2>
+            <blockquote>
+               <p>I love Tony's courses!</p>
+            </blockquote>
+            <blockquote>
+               <p>Tony's courses <strong>helped me get a job.</strong></p>
+            </blockquote>
+            <blockquote class="featured">
+               <p>I love learning about HTML &amp; CSS!</p>
+            </blockquote>    
+         </section>
+
+         <section id="mailing-address">
+            <h2>Mailing Address</h2>
+            <address>
+               111 Main St.<br />
+               Somewhere, NY 33333
+            </address>     
+         </section>
+
+         <section id="contactme">
+            <h2>Contact Me</h2>
+            <form action="dosomething.html" method="post">
+               <p class="field">
+                  <label for="name" class="label-standard">Name</label>
+                  <input type="text" id="name" name="name" autocomplete="on">
+               </p>
+               <p class="field">
+                  <label for="email" class="label-standard">Email</label>
+                  <input type="email" id="email" name="email">
+               </p>
+               <p class="field">
+                  <label for="whycontacting" class="label-standard">Why Contacting</label>
+                  <select name="whycontacting" id="whycontacting">
+                     <option value="jobinterview">Job Interview</option>
+                     <option value="needhelp">Need Help</option>
+                  </select>
+               </p>
+               <p class="field">
+                  <label for="comments" class="label-standard">Comments</label>
+                  <textarea name="comments" id="comments" rows="3"></textarea>
+               </p>
+
+               <fieldset class="resume-fieldset">
+                  <legend>Best Contact Time</legend>
+                  <p>
+                     <label for="contacttime1">Morning</label>
+                     <input type="radio" id="contacttime1" name="contactime" value="morning">
+                  </p>
+                  <p>
+                     <label for="contacttime2">Afternoon</label>
+                     <input type="radio" id="contacttime2" name="contactime" value="afternoon">
+                  </p>
+                  <p>
+                     <label for="contacttime3">Evening</label>
+                     <input type="radio" id="contacttime3" name="contactime" value="evening">
+                  </p>
+                  <p>
+                     <label for="asap">ASAP</label>
+                     <input type="checkbox" name="asap" id="asap">
+                  </p>
+               </fieldset>
+               
+               <p>
+                  <button type="submit">Send</button>
+               </p>
+            </form>
+         </section>
+      </main>
+   </body>
+
+</html>
